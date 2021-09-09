@@ -1,0 +1,16 @@
+type movieTheather {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+  numTheather: Int
+  type: TypeRoom!
+  chairs: [Chair]
+}
+
+enum TypeRoom {
+    NORMAL
+    TRESD
+    IMAX
+    VIP
+    CUATROD
+}

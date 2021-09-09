@@ -1,0 +1,14 @@
+type Chair {
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+    numChair: Int!
+    type: TypeChair!
+    theather: movieTheather! @relation(link: INLINE)
+}
+
+enum TypeChair {
+    PREMIUM
+    RECLINABLE
+    NORMAL
+}

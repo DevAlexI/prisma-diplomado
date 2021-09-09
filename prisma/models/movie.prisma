@@ -1,0 +1,15 @@
+type Movie{
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  name: String!
+  duration: Float!
+  genre: TypeGenre!
+}
+
+enum TypeGenre {
+    ACTION
+    SCARY
+    COMEDY
+    DRAMA
+    DOCUMENTAL
+}

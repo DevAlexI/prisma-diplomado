@@ -1,0 +1,17 @@
+type Membership {
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    updatedAt: DateTime! @updatedAt
+    type: TypeMembership!
+    points: Float!
+    purchases: [Order]
+    status: Boolean!
+}
+
+enum TypeMembership {
+    NONE
+    NORMAL
+    SILVER
+    GOLD
+    PREMIUM
+}

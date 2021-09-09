@@ -1,0 +1,11 @@
+type Cinema {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+  name: String!
+  address: String!
+  employees: [Employee]
+  numTheathers: Int
+  isCafe: Boolean
+}
+

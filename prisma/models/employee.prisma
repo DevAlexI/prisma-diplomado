@@ -1,0 +1,17 @@
+type Employee {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+  numEmployee: Int! @unique
+  type: TypeEmployee!
+  salary: Float!
+  cinema: Cinema! @relation(link: INLINE)
+  user: User! @relation(link: INLINE)
+}
+
+enum TypeEmployee {
+    ADMIN
+    CASHIER
+    SELLER
+    CLEANER
+}

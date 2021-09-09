@@ -1,0 +1,7 @@
+type Client {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+  membership: Membership! @relation(link: INLINE)
+  user: User! @relation(link: INLINE)
+}
